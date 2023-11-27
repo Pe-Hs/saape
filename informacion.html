@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAAPE :: Sistema de Abastecimiento de Agua Para Emergencia</title>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
+
+
+    <link href="js/bootstrap-5.3.1-dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <style>
+        body {
+            background-color: #d7edfa;
+        }
+
+        .card {
+            width: 600px !important;
+            border: none;
+            overflow: hidden;
+            transition: transform 0.3s;
+            padding: 15px;
+            ;
+        }
+
+        .row {
+            width: 600px !important;
+            margin-left: auto;
+            margin-right: auto;
+            width: (600, 50%);
+
+
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card-img-top {
+            transition: opacity 0.3s;
+        }
+
+        .card:hover .card-img-top {
+            opacity: 0.7;
+        }
+
+        .card-title {
+            color: #007BFF;
+        }
+
+        .btn-primary {
+            background-color: #007BFF;
+            border: none;
+        }
+
+        .btn-primary:hover {
+            background-color: #0056b3;
+        }
+    </style>
+  <script type="module" crossorigin src="http://www.eseotech.com/assets/modulepreload-polyfill-3cfb730f.js"></script>
+  <script type="module" crossorigin src="http://www.eseotech.com/assets/geovisor-29bcebc4.js"></script>
+</head>
+
+<body>
+
+    <div class="" style="background: #1784A9">
+        <a href="portada.html">
+            <div>
+                <img src="assets/img/header.svg" height="110">
+            </div>
+
+        </a>
+
+
+
+
+        <nav class="navbar bg-navbar">
+            <div class="container-fluid d-flex justify-content-around">
+                <a class="navbar-brand navbar-text" href="geovisor.html">
+                    <img height="30" src="assets/img/menu-geovisor.svg"><b>VISOR GIS</b> </a>
+                <a class="navbar-brand navbar-text" href="mapas.html">
+                    <img height="30" src="assets/img/menu-planos.svg"><b>MAPAS</b> </a>
+                <a class="navbar-brand navbar-text" href="informacion.html">
+                    <img height="30" src="assets/img/m-informacion.svg"> <b>INFORMACI&Oacute;N</b> </a>
+                <a class="navbar-brand navbar-text" href="contacto.html">
+                    <img height="30" src="assets/img/menu-contacto.svg"> <b>CONTACTO</b> </a>
+            </div>
+        </nav>
+
+
+    </div>
+
+    <div class="bloque-pri">
+        <div class="contenedorpmapas">
+            <div class="div-interno pmapasdiv1">
+                <div class="mapimgcontent2">
+                    <div class="img-info">
+                        <img src="assets/img/info1.png" alt="" style="height: 420px;">
+                    </div>
+                    <br>
+                    <div class="detailsmaps">
+                        <div class="titlemaps"><b>Infografía del Proyecto SAAPE</b></div>
+                        <div class="txtdetailsmaps">
+                            <table style="border-collapse: collapse;">
+                                <thead>
+                                    <tr>
+                                        <th style="border: none;"></th>
+                                        <th style="border: none;"></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td style="border: none;">1. ¿Qué es el SAAPE?</td>
+                                        <td style="border: none;"><a href="informacion.html#">[Ver]</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td style="border: none;">2. Etapas del proyecto de investigación SAAPE</td>
+                                        <td style="border: none;"><a href="informacion.html#">[Ver]</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td style="border: none;">3. Consideraciones del diseño del SAAPE</td>
+                                        <td style="border: none;"><a href="informacion.html#">[Ver]</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td style="border: none;">4. Punto de abastecimiento en espacios públicos</td>
+                                        <td style="border: none;"><a href="informacion.html#">[Ver]</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td style="border: none;">5. Caracterización de la unidad espacial SAAPE</td>
+                                        <td style="border: none;"><a href="informacion.html#">[Ver]</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td style="border: none;">6. Criterios de diseño SAAPE</td>
+                                        <td style="border: none;"><a href="informacion.html#">[Ver]</a></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                      
+                    </div>
+                </div>
+
+            </div>
+            <div class="div-interno pmapasdiv1">
+                <div class="mapimgcontent2">
+                    <div class="img-info">
+                        <img src="assets/img/info2.png" alt="" style="height: 420px;">
+                    </div>
+                    <br>
+                    <div class="detailsmaps">
+                        <div class="titlemaps"><b>Barrio PUCP, ejemplos de aplicación</b></div>
+                        <div class="txtdetailsmaps">
+                            <table style="border-collapse: collapse;">
+                                <thead>
+                                    <tr>
+                                        <th style="border: none;"></th>
+                                        <th style="border: none;"></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td style="border: none;">Zona de Pando 9, Parque Carlos Lisson</td>
+                                        <td style="border: none;"><a href="informacion.html#">[Ver]</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td style="border: none;">Zona de Pando 9</td>
+                                        <td style="border: none;"><a href="informacion.html#">[Ver]</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td style="border: none;">Zona de Pando 8</td>
+                                        <td style="border: none;"><a href="informacion.html#">[Ver]</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td style="border: none;">Zona de Pando 7</td>
+                                        <td style="border: none;"><a href="informacion.html#">[Ver]</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td style="border: none;">Zona de Pando 9</td>
+                                        <td style="border: none;"><a href="informacion.html#">[Ver]</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td style="border: none;">Zona de Pando 9</td>
+                                        <td style="border: none;"><a href="informacion.html#">[Ver]</a></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+           
+            <div class="div-interno pmapasdiv1">
+                <div class="mapimgcontent2">
+                    <div class="img-info">
+                        <img src="assets/img/info3.png" alt="" style="height: 420px;">
+                    </div>
+                    <br>
+                    <div class="detailsmaps">
+                        <div class="titlemaps"><b>Documentos del proyecto</b> </div>
+                        <div class="txtdetailsmaps">
+                            <table style="border-collapse: collapse;">
+                                <thead>
+                                    <tr>
+                                        <th style="border: none;"></th>
+                                        <th style="border: none;"></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td style="border: none;">Video taller de presentación del SAAPE</td>
+                                        <td style="border: none;"><a href="informacion.html#">[Ver]</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td style="border: none;">Fotos del taller de presentación del SAAPE</td>
+                                        <td style="border: none;"><a href="informacion.html#">[Ver]</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td style="border: none;">Encuesta de percepción del riesgo en Lima Cómo Vamos</td>
+                                        <td style="border: none;"><a href="informacion.html#">[Ver]</a></td>
+                                    </tr>
+                                    
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+   
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+ 
+    <center>
+    <div class="bloque-pri">
+
+        <div class="msj-mapa">
+            <div class="overlap-group-wrapper">
+
+                <div class="text-wrapper">INFO</div>
+                <p class="div">
+                    Información sobre el proyecto de investigación con impacto social SAAPE -PUCP y cómo se elaboró esta guía
+                </p>
+
+            </div>
+        </div>
+
+    </center>
+    </div>
+
+
+
+
+
+
+
+    <img src="assets/img/saape6.svg" class="imagen-flotante" />
+
+    <!-- optionally define the sidebar content via HTML markup -->
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+
+
+    <link rel="stylesheet" href="libs/L.switchBasemap.css" />
+    <script src="libs/L.switchBasemap.js"></script>
+
+    <link rel="stylesheet" href="https://domoritz.github.io/leaflet-locatecontrol/dist/L.Control.Locate.min.css" />
+    <script src="https://domoritz.github.io/leaflet-locatecontrol/src/L.Control.Locate.js"></script>
+
+    <link rel="stylesheet" href="https://noerw.github.io/leaflet-sidebar-v2/css/leaflet-sidebar.css" />
+    <script src="https://noerw.github.io/leaflet-sidebar-v2/js/leaflet-sidebar.js"></script>
+
+    <!-- Archivos del plugin leaflet.fullscreen -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.fullscreen/1.6.0/Control.FullScreen.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.fullscreen/1.6.0/Control.FullScreen.js"></script>
+
+    <!-- Archivos del plugin leaflet-search -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-search@2.9.7/dist/leaflet-search.min.css" />
+    <script src="https://unpkg.com/leaflet-search@2.9.7/dist/leaflet-search.min.js"></script>
+
+    <script src="js/bootstrap-5.3.1-dist/js/bootstrap.min.js"></script>
+    <script src="js/jquery/jquery.js"></script>
+    <script src="js/lib/esri-leaflet-vector.js"></script>
+    <script src="js/lib/esri-leaflet.js"></script>
+
+    <link rel="stylesheet" href="http://www.eseotech.com/libs/geocoder/BingGeocoder.css" />
+    <script src="http://www.eseotech.com/libs/geocoder/BingGeocoder.js"></script>
+
+
+    
+</body>
+
+</html>
